@@ -1,5 +1,15 @@
 # @cloud-technology/github-api #
 
+VCS API for GitHub
+
+## NPM Public Registry Setup ##
+
+```bash
+npm adduser --registry "https://registry.npmjs.com" --scope @cloud-technology
+npm login --scope @cloud-technology
+npm publish --access public
+```
+
 ## NPM Private Registry Setup ##
 
 ```bash
