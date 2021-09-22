@@ -1,0 +1,26 @@
+{
+    "name": "@cloud-technology/github-api",
+    "version": "0.0.1",
+    "repository": "git+https://github.com/cloud-hybrid/cloud-technology.git",
+    "scripts": {
+        "cli": "node ./Source/CLI.js",
+        "data": "node ./Source/General.js",
+        "users": "node ./Source/Users.js",
+        "package": "node ./Source/Package.js",
+        "repositories": "node ./Source/Repositories.js"
+    },
+    "dependencies": {
+        "@octokit/core": "^3.5.1"
+    },
+    "license": "BSD-3-Clause",
+    "main": "./Source/CLI.js",
+    "type": "module",
+    "exports":{
+        "default": [
+            "./Source/Users.js",
+            "./Source/CLI.js",
+            "./Source/Package.js",
+            "./Source/Repositories.js"
+        ]
+    }
+}
