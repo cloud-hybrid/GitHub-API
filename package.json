@@ -15,7 +15,7 @@
     "license": "BSD-3-Clause",
     "main": "./Source/CLI.js",
     "type": "module",
-    "exports":{
+    "exports": {
         "default": [
             "./Source/Users.js",
             "./Source/CLI.js",
