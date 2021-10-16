@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "@octokit/core": "^3.5.1",
-        "github-api": "cloud-hybrid/github-api#Development"
+        "github-api": "https://github.com/cloud-hybrid/github-api.git"
     },
     "license": "BSD-3-Clause",
     "main": "./Source/CLI.js",

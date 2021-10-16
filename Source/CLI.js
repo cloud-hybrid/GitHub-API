@@ -2,10 +2,10 @@ const Runtime = process;
 
 import * as Reader from "readline";
 
-import * as Users from "github-api/Users.js";
-import * as Package from "github-api/Package.js";
-import * as Repositories from "github-api/Repositories.js";
-import * as CLI from "github-api/CLI.js";
+import * as Users from "github-api/Source/Users.js";
+import * as Package from "github-api/Source/Package.js";
+import * as Repositories from "github-api/Source/Repositories.js";
+import * as CLI from "github-api/Source/CLI.js";
 
 /*****
  *
@@ -98,11 +98,9 @@ const Prompt = async () => {
     });
 };
 
-const Main = async () => {
+export const Main = async () => {
     await Prompt();
 };
 
-export default Main;
-
-await CLI.default()
+await CLI.Main();
 
