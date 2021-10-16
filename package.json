@@ -16,10 +16,13 @@
     "license": "BSD-3-Clause",
     "main": "./Source/CLI.js",
     "type": "module",
+    "workspaces": [
+        "Source"
+    ],
     "exports": {
-        "./Users.js": "./Source/Users.js",
-        "./CLI.js": "./Source/CLI.js",
-        "./Package.js": "./Source/Package.js",
-        "./Repositories.js": "./Source/Repositories.js"
+        "./Source/Users.js": "./Source/Users.js",
+        "./Source/CLI.js": "./Source/CLI.js",
+        "./Source/Package.js": "./Source/Package.js",
+        "./Source/Repositories.js": "./Source/Repositories.js"
     }
 }
