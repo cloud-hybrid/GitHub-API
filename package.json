@@ -1,5 +1,5 @@
 {
-    "name": "@cloud-technology/github-api",
+    "name": "github-api",
     "version": "0.0.3",
     "repository": "git+https://github.com/cloud-hybrid/github-api.git",
     "scripts": {
@@ -10,17 +10,16 @@
         "repositories": "node ./Source/Repositories.js"
     },
     "dependencies": {
-        "@octokit/core": "^3.5.1"
+        "@octokit/core": "^3.5.1",
+        "github-api": "cloud-hybrid/github-api#Development"
     },
     "license": "BSD-3-Clause",
     "main": "./Source/CLI.js",
     "type": "module",
     "exports": {
-        "default": [
-            "./Source/Users.js",
-            "./Source/CLI.js",
-            "./Source/Package.js",
-            "./Source/Repositories.js"
-        ]
+        "./Users.js": "./Source/Users.js",
+        "./CLI.js": "./Source/CLI.js",
+        "./Package.js": "./Source/Package.js",
+        "./Repositories.js": "./Source/Repositories.js"
     }
 }
