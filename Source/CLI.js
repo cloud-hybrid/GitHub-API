@@ -102,5 +102,4 @@ export const Main = async () => {
     await Prompt();
 };
 
-await CLI.Main();
 
